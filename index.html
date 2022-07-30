@@ -1,0 +1,16 @@
+<script src="index.js"></script>
+<h1>Candy machine NFT observer</h1>
+<p>This is A small piece of code that monitors <a href= "https://solana.com/">Solana</a> network for newly minted NFT.</p>
+<div id="controls">
+    <label>Enter the address of your Solana WebSocket endpoint:</label></br>
+    <input type="text" id="url" placeholder="wss://xxxxx.com/xxxxx"/></br>
+    <button type="button" id="openWS" onclick="openConnection();">connect</button></br>
+    <button type="button" id="startListening" onclick="init();">start</button></br>
+    <button type="button" id="closeWS" onclick="closeConnection();">disconnect</button></br>
+</div>
+<div id="info">
+    <p>
+        <strong>Status: </strong>
+        <span id="connectionstatus">Disconnected</span>
+    </p>
+</div>
